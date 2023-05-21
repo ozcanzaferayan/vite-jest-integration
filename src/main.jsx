@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import { setupStore } from './app/store.js';
 import { worker } from "./mocks/browser";
 
-axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
+axios.defaults.baseURL = '';
 
 if (process.env.NODE_ENV === 'development') {
 

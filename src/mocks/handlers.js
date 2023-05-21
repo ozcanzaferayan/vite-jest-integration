@@ -2,7 +2,7 @@
 import { rest } from "msw";
 
 export const handlers = [
-  rest.get("https://jsonplaceholder.typicode.com/users/1", (req, res, ctx) => {
+  rest.get("/users/1", (req, res, ctx) => {
     // If authenticated, return a mocked user details
     return res(
       ctx.status(200),
